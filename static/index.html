@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasty Bites | Order Online</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <!-- ===== Header / Navbar ===== -->
+  <header class="navbar">
+    <div class="logo">🍽️ Tasty Bites</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+    </nav>
+    <button id="cart-btn" class="cart-btn">
+      🛒 Cart <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Delicious Food, Delivered Fast</h1>
+      <p>Order your favourite meals online and enjoy them at home.</p>
+      <a href="#menu" class="btn">Order Now</a>
+    </div>
+  </section>
+
+  <!-- ===== Menu ===== -->
+  <section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div id="menu-grid" class="menu-grid">
+      <!-- Menu cards are injected here by app.js -->
+      <p class="loading">Loading menu...</p>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>
+      At Tasty Bites we cook fresh, tasty meals made with quality ingredients.
+      Order online and get hot food delivered right to your door.
+    </p>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>© 2026 Hozayfa Ahsan. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== Cart Drawer ===== -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <aside id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="close-cart" class="close-btn">&times;</button>
+    </div>
+
+    <div id="cart-items" class="cart-items">
+      <p class="empty-msg">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-total">
+      Total: $<span id="cart-total">0.00</span>
+    </div>
+
+    <!-- Checkout form -->
+    <form id="checkout-form" class="checkout-form">
+      <h4>Delivery Details</h4>
+      <input type="text" id="cust-name" placeholder="Your name" required />
+      <input type="tel" id="cust-phone" placeholder="Phone number" required />
+      <textarea id="cust-address" placeholder="Delivery address" required></textarea>
+      <button type="submit" class="btn btn-full">Place Order</button>
+      <p id="order-msg" class="order-msg"></p>
+    </form>
+  </aside>
+
+
+  <button id="chat-toggle">
+    💬
+  </button>
+
+  <div id="chat-window">
+
+    <div id="chat-header">
+
+        🍔 Foodie AI Assistant
+
+    </div>
+
+    <div id="chat-messages">
+
+        <div class="bot">
+
+            Hello 👋
+
+            How can I help you today?
+
+        </div>
+
+    </div>
+
+    <div id="chat-input-area">
+
+        <input
+            id="chat-input"
+            type="text"
+            placeholder="Type your question..."
+        >
+
+        <button id="send-btn">
+
+            Send
+
+        </button>
+
+    </div>
+
+  </div>
+
+  <link rel="stylesheet" href="/static/chatbot.css">
+
+  <script src="/static/chatbot.js"></script>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

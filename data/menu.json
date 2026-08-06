@@ -1,0 +1,336 @@
+{
+  "restaurant": {
+    "name": "Foodie",
+    "currency": "USD",
+    "last_updated": "2026-07-27"
+  },
+
+  "categories": [
+    {
+      "id": "burger",
+      "name": "Burgers"
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza"
+    },
+    {
+      "id": "fried_chicken",
+      "name": "Fried Chicken"
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta"
+    },
+    {
+      "id": "rice",
+      "name": "Rice"
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks"
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts"
+    }
+  ],
+
+  "items": [
+
+    {
+      "id": "BG001",
+      "category": "burger",
+      "name": "Classic Chicken Burger",
+      "description": "Grilled chicken breast with lettuce, tomato, cheese and house sauce.",
+      "price": 8.99,
+      "available": true,
+      "preparation_time": "15-20 minutes",
+      "ingredients": [
+        "Chicken Breast",
+        "Burger Bun",
+        "Cheddar Cheese",
+        "Lettuce",
+        "Tomato",
+        "Mayonnaise"
+      ],
+      "allergens": [
+        "Gluten",
+        "Milk",
+        "Egg"
+      ],
+      "nutrition": {
+        "calories": 620,
+        "protein": "32g",
+        "fat": "24g",
+        "carbohydrates": "48g"
+      },
+      "spicy_level": "Mild",
+      "vegetarian": false,
+      "vegan": false,
+      "halal": true,
+      "recommended_addons": [
+        "Extra Cheese",
+        "French Fries",
+        "Coke"
+      ]
+    },
+
+    {
+      "id": "BG002",
+      "category": "burger",
+      "name": "Beef Burger",
+      "description": "Juicy beef patty with cheddar cheese and fresh vegetables.",
+      "price": 10.99,
+      "available": true,
+      "preparation_time": "15-20 minutes",
+      "ingredients": [
+        "Beef Patty",
+        "Burger Bun",
+        "Cheddar Cheese",
+        "Onion",
+        "Tomato",
+        "Lettuce",
+        "Burger Sauce"
+      ],
+      "allergens": [
+        "Gluten",
+        "Milk"
+      ],
+      "nutrition": {
+        "calories": 740,
+        "protein": "38g",
+        "fat": "35g",
+        "carbohydrates": "46g"
+      },
+      "spicy_level": "Mild",
+      "vegetarian": false,
+      "vegan": false,
+      "halal": true,
+      "recommended_addons": [
+        "Extra Patty",
+        "French Fries",
+        "Pepsi"
+      ]
+    },
+
+    {
+      "id": "PZ001",
+      "category": "pizza",
+      "name": "Margherita Pizza",
+      "description": "Classic pizza with mozzarella and tomato sauce.",
+      "price": 12.99,
+      "available": true,
+      "preparation_time": "20-25 minutes",
+      "ingredients": [
+        "Pizza Dough",
+        "Mozzarella",
+        "Tomato Sauce",
+        "Basil"
+      ],
+      "allergens": [
+        "Milk",
+        "Gluten"
+      ],
+      "nutrition": {
+        "calories": 980,
+        "protein": "42g",
+        "fat": "36g",
+        "carbohydrates": "118g"
+      },
+      "spicy_level": "None",
+      "vegetarian": true,
+      "vegan": false,
+      "halal": true,
+      "recommended_addons": [
+        "Extra Cheese",
+        "Mushroom",
+        "Olives"
+      ]
+    },
+
+    {
+      "id": "PZ002",
+      "category": "pizza",
+      "name": "Pepperoni Pizza",
+      "description": "Pepperoni, mozzarella and tomato sauce.",
+      "price": 15.99,
+      "available": true,
+      "preparation_time": "20-25 minutes",
+      "ingredients": [
+        "Pizza Dough",
+        "Pepperoni",
+        "Mozzarella",
+        "Tomato Sauce"
+      ],
+      "allergens": [
+        "Milk",
+        "Gluten"
+      ],
+      "nutrition": {
+        "calories": 1180,
+        "protein": "56g",
+        "fat": "54g",
+        "carbohydrates": "120g"
+      },
+      "spicy_level": "Mild",
+      "vegetarian": false,
+      "vegan": false,
+      "halal": false,
+      "recommended_addons": [
+        "Extra Cheese",
+        "Chicken",
+        "Garlic Bread"
+      ]
+    },
+
+    {
+      "id": "FC001",
+      "category": "fried_chicken",
+      "name": "Crispy Fried Chicken (2 Pieces)",
+      "description": "Golden crispy fried chicken served hot.",
+      "price": 6.99,
+      "available": true,
+      "preparation_time": "12-15 minutes",
+      "ingredients": [
+        "Chicken",
+        "Flour",
+        "Seasoning",
+        "Cooking Oil"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "nutrition": {
+        "calories": 520,
+        "protein": "34g",
+        "fat": "29g",
+        "carbohydrates": "24g"
+      },
+      "spicy_level": "Medium",
+      "vegetarian": false,
+      "vegan": false,
+      "halal": true,
+      "recommended_addons": [
+        "French Fries",
+        "Coleslaw"
+      ]
+    },
+
+    {
+      "id": "PA001",
+      "category": "pasta",
+      "name": "Chicken Alfredo Pasta",
+      "description": "Creamy Alfredo pasta with grilled chicken.",
+      "price": 13.99,
+      "available": true,
+      "preparation_time": "20 minutes",
+      "ingredients": [
+        "Pasta",
+        "Chicken",
+        "Cream",
+        "Parmesan",
+        "Garlic"
+      ],
+      "allergens": [
+        "Milk",
+        "Gluten"
+      ],
+      "nutrition": {
+        "calories": 850,
+        "protein": "40g",
+        "fat": "36g",
+        "carbohydrates": "82g"
+      },
+      "spicy_level": "None",
+      "vegetarian": false,
+      "vegan": false,
+      "halal": true
+    },
+
+    {
+      "id": "RC001",
+      "category": "rice",
+      "name": "Chicken Fried Rice",
+      "description": "Fried rice with chicken and vegetables.",
+      "price": 11.99,
+      "available": true,
+      "preparation_time": "18 minutes",
+      "ingredients": [
+        "Rice",
+        "Chicken",
+        "Carrot",
+        "Peas",
+        "Egg",
+        "Soy Sauce"
+      ],
+      "allergens": [
+        "Egg",
+        "Soy"
+      ],
+      "nutrition": {
+        "calories": 760,
+        "protein": "31g",
+        "fat": "22g",
+        "carbohydrates": "92g"
+      },
+      "spicy_level": "Mild",
+      "vegetarian": false,
+      "vegan": false,
+      "halal": true
+    },
+
+    {
+      "id": "DR001",
+      "category": "drinks",
+      "name": "Coca-Cola",
+      "description": "330ml chilled soft drink.",
+      "price": 1.99,
+      "available": true,
+      "preparation_time": "Instant",
+      "ingredients": [
+        "Carbonated Water",
+        "Sugar",
+        "Flavoring"
+      ],
+      "allergens": [],
+      "nutrition": {
+        "calories": 139
+      },
+      "spicy_level": "None",
+      "vegetarian": true,
+      "vegan": true,
+      "halal": true
+    },
+
+    {
+      "id": "DS001",
+      "category": "desserts",
+      "name": "Chocolate Brownie",
+      "description": "Warm chocolate brownie served fresh.",
+      "price": 4.99,
+      "available": true,
+      "preparation_time": "5 minutes",
+      "ingredients": [
+        "Chocolate",
+        "Flour",
+        "Butter",
+        "Egg",
+        "Sugar"
+      ],
+      "allergens": [
+        "Milk",
+        "Egg",
+        "Gluten"
+      ],
+      "nutrition": {
+        "calories": 430
+      },
+      "spicy_level": "None",
+      "vegetarian": true,
+      "vegan": false,
+      "halal": true
+    }
+
+  ]
+}
