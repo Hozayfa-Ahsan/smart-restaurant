@@ -30,6 +30,8 @@ Foodie AI Restaurant Chatbot is a complete restaurant web application that allow
 - 📚 Receive answers based on the restaurant knowledge base
 - 🔄 Maintain conversation history
 
+---
+
 The chatbot uses **Retrieval-Augmented Generation (RAG)** instead of relying only on the language model.
 
 When a customer asks a question:
@@ -48,7 +50,6 @@ Google Gemini
 AI Response
 
 ---
-
 
 ✨ Key Features
 🍔 Restaurant Website
