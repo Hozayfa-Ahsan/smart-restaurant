@@ -117,13 +117,13 @@ Restaurant/
 Clone the repository
 
 ```bash
-git clone https://github.com/Hozayfa-Ahsan/restaurant-ai-chatbot.git
+git clone https://github.com/Hozayfa-Ahsan/smart-restaurant.git
 ```
 
 Go inside
 
 ```bash
-cd restaurant-ai-chatbot
+cd smart-restaurant
 ```
 
 Install packages
