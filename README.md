@@ -2,8 +2,9 @@
 
 > An intelligent restaurant website powered by Retrieval-Augmented Generation (RAG), Google Gemini, Pinecone Vector Database, Flask, and Docker.
 
+---
 
-[![🚀 Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Website-success?style=for-the-badge)](https://smart-restaurant-qzvz.onrender.com/)
+## 🚀 Live Demo
 
 ### 🌐 Restaurant Website
 
@@ -30,8 +31,6 @@ Foodie AI Restaurant Chatbot is a complete restaurant web application that allow
 - 📚 Receive answers based on the restaurant knowledge base
 - 🔄 Maintain conversation history
 
----
-
 The chatbot uses **Retrieval-Augmented Generation (RAG)** instead of relying only on the language model.
 
 When a customer asks a question:
@@ -48,39 +47,44 @@ Relevant Restaurant Knowledge
 Google Gemini
        ↓
 AI Response
+```
 
 ---
 
+## ✨ Key Features
 
-✨ Key Features
-🍔 Restaurant Website
-Responsive restaurant interface
-Menu browsing
-Food categories
-Shopping cart
-Order placement
-Server-side order validation
-🤖 AI Chatbot
-RAG-based question answering
-Google Gemini integration
-Pinecone vector search
-Conversation history
-Context-aware follow-up questions
-Restaurant-specific knowledge
-Prevents unsupported menu information from being invented
+### 🍔 Restaurant Website
 
+- Responsive restaurant interface
+- Menu browsing
+- Food categories
+- Shopping cart
+- Order placement
+- Server-side order validation
 
-🐳 Deployment
-Docker containerization
-Render deployment
-GitHub repository
-GitHub Pages widget hosting
+### 🤖 AI Chatbot
+
+- RAG-based question answering
+- Google Gemini integration
+- Pinecone vector search
+- Conversation history
+- Context-aware follow-up questions
+- Restaurant-specific knowledge
+- Prevents unsupported menu information from being invented
+
+### 🐳 Deployment
+
+- Docker containerization
+- Render deployment
+- GitHub repository
+- GitHub Pages widget hosting
+
 ---
 
 ## 🛠 Tech Stack
 
 | Category | Technology |
-|-----------|------------|
+|---|---|
 | Backend | Flask |
 | Frontend | HTML, CSS, JavaScript |
 | LLM | Google Gemini 2.5 Flash |
@@ -92,14 +96,13 @@ GitHub Pages widget hosting
 | Widget Hosting | GitHub Pages |
 | Version Control | Git & GitHub |
 
-
 ---
 
-🧩 Embeddable Widget Architecture
+## 🧩 Embeddable Widget Architecture
 
 The chatbot can operate independently from the restaurant website.
 
-
+```text
 Client Website
       │
       │ <script>
@@ -117,11 +120,32 @@ RAG Pipeline
    ┌──┴──┐
    ▼     ▼
 Pinecone Gemini
+```
 
+### Example
+
+```html
+<script
+    src="https://hozayfa-ahsan.github.io/smart-restaurant/widget/widget.js"
+    data-api-url="https://smart-restaurant-qzvz.onrender.com"
+    data-client-id="foodie"
+    data-title="Foodie Assistant">
+</script>
+```
+
+### Configuration
+
+| Attribute | Description |
+|---|---|
+| `data-api-url` | URL of the chatbot backend |
+| `data-client-id` | Identifies the client |
+| `data-title` | Chatbot title |
 
 ---
 
+## 📂 Project Structure
 
+```text
 smart-restaurant/
 │
 ├── chatbot/
@@ -138,6 +162,7 @@ smart-restaurant/
 │
 ├── docs/
 │   └── screenshots/
+│       ├── architecture.png
 │       ├── homepage.png
 │       ├── chatbot.png
 │       ├── chatbot-answer.png
@@ -164,195 +189,184 @@ smart-restaurant/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
-
 ```
 
 ---
 
-# 🧠 System Architecture
+## 🧠 System Architecture
 
-![Architecture](docs/screenshots/architecture.png)
+![System Architecture](docs/screenshots/architecture.png)
+
+### RAG Pipeline
+
+```text
+Customer
+   │
+   ▼
+Restaurant Website
+   │
+   ▼
+Chatbot Widget
+   │
+   ▼
+Flask API
+   │
+   ▼
+RAG Pipeline
+   │
+   ├── Query Embedding
+   │
+   ▼
+Pinecone Vector Database
+   │
+   ▼
+Relevant Knowledge
+   │
+   ▼
+Google Gemini
+   │
+   ▼
+AI Response
+```
 
 ---
 
-# 📷 Screenshots
+## 📷 Screenshots
 
-## Homepage
+### 🏠 Homepage
 
 ![Homepage](docs/screenshots/homepage.png)
 
 ---
 
-## Menu
+### 🍔 Menu
 
 ![Menu](docs/screenshots/menu.png)
 
 ---
 
-## AI Chatbot
+### 🤖 AI Chatbot
 
-![Chatbot](docs/screenshots/chatbot.png)
-
----
-
-## AI Response
-
-![Answer](docs/screenshots/chatbot-answer.png)
+![AI Chatbot](docs/screenshots/chatbot.png)
 
 ---
 
-## Order System
+### 💬 AI Response
 
-![Order](docs/screenshots/order.png)
-
----
-
-## Docker
-
-![Docker](docs/screenshots/docker.png)
+![AI Response](docs/screenshots/chatbot-answer.png)
 
 ---
 
-# 🚀 Installation
+### 🛒 Order System
 
-Clone the repository
+![Order System](docs/screenshots/order.png)
+
+---
+
+## 🚀 Run Locally
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Hozayfa-Ahsan/smart-restaurant.git
 ```
 
-Go inside
+### 2. Enter the project
 
 ```bash
 cd smart-restaurant
 ```
 
-Install packages
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Create a `.env` file
+### 4. Configure environment variables
+
+Create a `.env` file:
 
 ```text
 GOOGLE_API_KEY=YOUR_API_KEY
 PINECONE_API_KEY=YOUR_API_KEY
-PINECONE_INDEX_NAME=foodie
-```
-
-Run
-
-```bash
-python app.py
-```
-
-Open
-
-```
-http://127.0.0.1:5000
-```
-
----
-
-# 🐳 Docker
-
-Build
-
-```bash
-docker build -t smart-restaurant .
-```
-
-Run
-
-```bash
-docker run --env-file .env -p 5000:5000 smart-restaurant
-```
----
-
-
-
-
-🚀 Run Locally
-1. Clone the repository
-git clone https://github.com/Hozayfa-Ahsan/smart-restaurant.git
-2. Enter the project
-cd smart-restaurant
-3. Install dependencies
-pip install -r requirements.txt
-4. Configure environment variables
-
-Create a .env file:
-
-GOOGLE_API_KEY=YOUR_API_KEY
-PINECONE_API_KEY=YOUR_API_KEY
 PINECONE_INDEX_NAME=YOUR_INDEX_NAME
+```
 
-Never commit the .env file to GitHub.
+> Never commit the `.env` file to GitHub.
 
-5. Run the application
+### 5. Run the application
+
+```bash
 python app.py
+```
 
 Open:
 
+```text
 http://127.0.0.1:5000
-
+```
 
 ---
-🐳 Docker
-Build the image
+
+## 🐳 Docker
+
+### Build the image
+
+```bash
 docker build -t smart-restaurant .
-Run the container
+```
+
+### Run the container
+
+```bash
 docker run --env-file .env -p 5000:5000 smart-restaurant
+```
 
 Open:
 
+```text
 http://127.0.0.1:5000
-
-
----
-🌐 Deployment
-
-The application is deployed using:
-
-Backend
-
-Render
-
-https://smart-restaurant-qzvz.onrender.com
-Widget
-
-GitHub Pages
-
-https://hozayfa-ahsan.github.io/smart-restaurant/widget/widget.js
-Source Code
-
-GitHub
-
-https://github.com/Hozayfa-Ahsan/smart-restaurant
-
-
+```
 
 ---
-🔐 Security
+
+## 🌐 Deployment
+
+### Restaurant Website
+
+👉 **[Foodie Restaurant — Live Demo](https://smart-restaurant-qzvz.onrender.com/)**
+
+### Embeddable Widget
+
+👉 **[View Chatbot Widget](https://hozayfa-ahsan.github.io/smart-restaurant/widget/test.html)**
+
+### Widget Source
+
+👉 **[View widget.js](https://hozayfa-ahsan.github.io/smart-restaurant/widget/widget.js)**
+
+### Source Code
+
+👉 **[View GitHub Repository](https://github.com/Hozayfa-Ahsan/smart-restaurant)**
+
+---
+
+## 🔐 Security
 
 Sensitive credentials are stored in environment variables rather than source code.
 
 The repository does not contain:
 
-Google API keys
-Pinecone API keys
-.env
-orders.json
+- Google API keys
+- Pinecone API keys
+- `.env`
+- `orders.json`
 
-The .gitignore file prevents sensitive local files from being committed.
-
-
+The `.gitignore` file prevents sensitive local files from being committed.
 
 ---
 
-# 📌 Future Improvements
+## 📌 Future Improvements
 
 - User authentication
 - Admin dashboard
@@ -367,16 +381,14 @@ The .gitignore file prevents sensitive local files from being committed.
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Hozayfa Ahsan**
 
-GitHub:
-
-https://github.com/Hozayfa-Ahsan
+👉 **[GitHub Profile](https://github.com/Hozayfa-Ahsan)**
 
 ---
 
-# 📜 License
+## 📜 License
 
 This project is released under the MIT License.
