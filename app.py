@@ -19,6 +19,7 @@ import os
 from datetime import datetime
 from chatbot.rag_pipeline import RAGPipeline
 from flask import Flask, jsonify, request, send_from_directory
+from flask_cors import CORS
 import traceback
 from chatbot.conversation_manager import (
     add_message,
@@ -26,6 +27,7 @@ from chatbot.conversation_manager import (
 )
 
 app = Flask(__name__, static_folder="static", static_url_path="/static")
+CORS(app)
 rag = RAGPipeline()
 
 # Where orders are stored (a simple JSON file acting as a tiny database).
@@ -215,7 +217,10 @@ def chat():
 
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+
     app.run(
         host="0.0.0.0",
-        port=5000,
-        debug=False)
+        port=port,
+        debug=False
+    )
