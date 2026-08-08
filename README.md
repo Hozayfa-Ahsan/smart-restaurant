@@ -2,6 +2,10 @@
 
 > An intelligent restaurant website powered by Retrieval-Augmented Generation (RAG), Google Gemini, Pinecone Vector Database, Flask, and Docker.
 
+
+[![🚀 Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Website-success?style=for-the-badge)](https://smart-restaurant-qzvz.onrender.com/)
+
+
 ---
 
 ## 📖 Project Overview
@@ -17,6 +21,15 @@ Foodie AI Restaurant Chatbot is a complete restaurant web application that allow
 Unlike traditional chatbots, this project uses Retrieval-Augmented Generation (RAG) to retrieve relevant information before generating responses.
 
 ---
+
+## 🚀 Live Demo
+
+Try the fully deployed restaurant website and AI chatbot:
+
+👉 **[Open Foodie Restaurant — Live Demo](https://smart-restaurant-qzvz.onrender.com/)**
+
+> The application is deployed on Render and can be accessed directly from the internet.
+
 
 ## ✨ Features
 
