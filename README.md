@@ -122,17 +122,6 @@ RAG Pipeline
 Pinecone Gemini
 ```
 
-### Example
-
-```html
-<script
-    src="https://hozayfa-ahsan.github.io/smart-restaurant/widget/widget.js"
-    data-api-url="https://smart-restaurant-qzvz.onrender.com"
-    data-client-id="foodie"
-    data-title="Foodie Assistant">
-</script>
-```
-
 ### Configuration
 
 | Attribute | Description |
