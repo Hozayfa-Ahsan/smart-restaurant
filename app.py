@@ -214,7 +214,9 @@ def chat():
         }), 500
 
 
-
+@app.route("/health")
+def health():
+    return jsonify({"status": "ok"})
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

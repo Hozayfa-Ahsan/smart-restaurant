@@ -19,8 +19,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the entire project
 COPY . .
 
-# Flask port
-EXPOSE 5000
+# Render web service port
+EXPOSE 10000
 
 # Start Flask
 CMD ["python", "app.py"]
