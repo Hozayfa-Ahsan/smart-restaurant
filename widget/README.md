@@ -1,30 +1,31 @@
-# Foodie AI Chatbot Widget
+# Smart Restaurant AI Chatbot Widget
 
-The Foodie AI Chatbot Widget is a reusable JavaScript chatbot that can be embedded into an existing website.
+A reusable, embeddable AI chatbot widget powered by a Flask API, RAG, Pinecone, and Google Gemini.
 
-A client does not need to copy the entire Foodie restaurant website. They can add the widget to their website and connect it to the deployed Foodie AI backend.
+The widget can be embedded into a website using a single `<script>` tag.
 
 ---
 
-## 🚀 How It Works
+## Live Demo
 
-```text
-Client Website
-      │
-      │ chatbot widget
-      ▼
-  widget.js
-      │
-      │ HTTP POST
-      ▼
-Foodie AI Backend
-      │
-      ├── RAG Pipeline
-      ├── Pinecone
-      └── Google Gemini
-      │
-      ▼
-   AI Response
-      │
-      ▼
-Client Website
+**Restaurant Website:**
+
+https://smart-restaurant-qzvz.onrender.com
+
+**Embeddable Widget:**
+
+https://hozayfa-ahsan.github.io/smart-restaurant/widget/widget.js
+
+---
+
+## Quick Installation
+
+Add the following code before the closing `</body>` tag of any website:
+
+```html
+<script
+    src="https://hozayfa-ahsan.github.io/smart-restaurant/widget/widget.js"
+    data-api-url="https://smart-restaurant-qzvz.onrender.com"
+    data-client-id="foodie"
+    data-title="Foodie Assistant">
+</script>

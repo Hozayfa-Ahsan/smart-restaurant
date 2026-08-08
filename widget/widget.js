@@ -7,19 +7,24 @@
         return;
     }
 
-    // =========================================
-    // Configuration
-    // =========================================
+   // =========================================
+// Configuration
+// =========================================
 
     const script = document.currentScript;
 
-    const API_URL =
+    const API_URL = (
         script?.dataset.apiUrl ||
-        "http://127.0.0.1:5000";
+        "https://smart-restaurant-qzv2.onrender.com"
+    ).replace(/\/$/, "");
 
     const CLIENT_ID =
         script?.dataset.clientId ||
         "foodie";
+
+    const CHATBOT_TITLE =
+        script?.dataset.title ||
+        "Foodie Assistant";
 
     // =========================================
     // Load CSS
@@ -53,7 +58,7 @@
             <div id="ai-chatbot-header">
 
                 <span id="ai-chatbot-title">
-                    Foodie Assistant
+                    ${CHATBOT_TITLE}
                 </span>
 
                 <button id="ai-chatbot-close">
