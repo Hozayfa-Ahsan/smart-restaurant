@@ -31,19 +31,19 @@ Try the fully deployed restaurant website and AI chatbot:
 > The application is deployed on Render and can be accessed directly from the internet.
 
 
-## ✨ Features
+### ✨ Key Features
 
-- Restaurant landing page
-- Interactive menu
-- Online ordering system
-- AI chatbot
-- Conversation memory
-- Retrieval-Augmented Generation (RAG)
-- Pinecone Vector Database
-- Google Gemini 2.5 Flash
-- Semantic Search
-- Docker support
-- REST API using Flask
+- 🍔 Restaurant menu browsing
+- 🛒 Food ordering interface
+- 🤖 AI customer-support chatbot
+- 📚 RAG-based knowledge retrieval
+- 🔎 Pinecone vector database
+- 🧠 Google Gemini AI
+- 💬 Conversation history
+- 🐳 Docker containerization
+- 🌐 Online deployment with Render
+- 🧩 Embeddable chatbot widget
+- 📱 Responsive restaurant interface
 
 ---
 
