@@ -1,132 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tasty Bites | Order Online</title>
-  <link rel="stylesheet" href="/static/style.css" />
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Tasty Bites - Fresh, delicious food delivered to your door."
+    >
+
+    <title>Tasty Bites | Fresh Food Delivered</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
 </head>
+
 <body>
 
-  <!-- ===== Header / Navbar ===== -->
-  <header class="navbar">
-    <div class="logo">🍽️ Tasty Bites</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#menu">Menu</a>
-      <a href="#about">About</a>
-    </nav>
-    <button id="cart-btn" class="cart-btn">
-      🛒 Cart <span id="cart-count">0</span>
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="navbar-inner">
+
+            <a href="#home" class="logo">
+
+                <span class="logo-icon">🍽️</span>
+
+                <span>
+                    Tasty Bites
+                </span>
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#menu">
+                    Menu
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+            </nav>
+
+            <button
+                id="cart-btn"
+                class="cart-btn"
+                type="button"
+            >
+
+                🛒
+
+                <span>
+                    Cart
+                </span>
+
+                <span
+                    id="cart-count"
+                    class="cart-count"
+                >
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <main>
+
+        <section
+            id="home"
+            class="hero"
+        >
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    ✨ Freshly prepared • Made with love
+                </span>
+
+                <h1>
+                    Good Food.
+                    <span>Good Mood.</span>
+                </h1>
+
+                <p>
+                    Delicious meals prepared fresh and delivered
+                    straight to your door.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#menu"
+                        class="btn hero-btn"
+                    >
+                        Explore Menu
+                    </a>
+
+                    <a
+                        href="#about"
+                        class="hero-secondary-btn"
+                    >
+                        Discover Our Story
+                    </a>
+
+                </div>
+
+                <div class="hero-highlights">
+
+                    <div class="hero-highlight">
+
+                        <span>🍳</span>
+
+                        <div>
+                            <strong>Fresh</strong>
+                            <small>Every day</small>
+                        </div>
+
+                    </div>
+
+                    <div class="hero-highlight">
+
+                        <span>⚡</span>
+
+                        <div>
+                            <strong>Fast</strong>
+                            <small>Quick delivery</small>
+                        </div>
+
+                    </div>
+
+                    <div class="hero-highlight">
+
+                        <span>❤️</span>
+
+                        <div>
+                            <strong>Loved</strong>
+                            <small>Made for you</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FEATURES
+        ================================================== -->
+
+        <section class="features-section">
+
+            <div class="features-container">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🥬
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Fresh Ingredients
+                        </h3>
+
+                        <p>
+                            Quality ingredients in every meal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        👨‍🍳
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Made With Care
+                        </h3>
+
+                        <p>
+                            Prepared fresh by our kitchen team.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🚀
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Fast Delivery
+                        </h3>
+
+                        <p>
+                            Hot and delicious at your doorstep.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MENU
+        ================================================== -->
+
+        <section
+            id="menu"
+            class="menu-section"
+        >
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    🍴 WHAT'S COOKING
+                </span>
+
+                <h2>
+                    Explore Our Menu
+                </h2>
+
+                <p>
+                    From comforting classics to delicious
+                    favourites, there's something for everyone.
+                </p>
+
+            </div>
+
+
+            <div
+                id="menu-grid"
+                class="menu-grid"
+            >
+
+                <!--
+                    Menu cards are injected here by app.js
+                -->
+
+                <p class="loading">
+                    Loading our delicious menu...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section
+            id="about"
+            class="about-section"
+        >
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <span class="section-label">
+                        ❤️ OUR STORY
+                    </span>
+
+                    <h2>
+                        Food Made With
+                        <span>Passion</span>
+                    </h2>
+
+                    <p>
+                        At Tasty Bites, we believe great food
+                        brings people together.
+                    </p>
+
+                    <p>
+                        That's why we prepare every meal with
+                        fresh ingredients, thoughtful recipes,
+                        and plenty of care. Whether you're
+                        craving a quick lunch, a family dinner,
+                        or a delicious treat, we're here to
+                        make your day a little tastier.
+                    </p>
+
+                    <a
+                        href="#menu"
+                        class="btn"
+                    >
+                        Order Something Delicious
+                    </a>
+
+                </div>
+
+
+                <div class="about-visual">
+
+                    <div class="about-card about-card-main">
+
+                        <div class="about-emoji">
+                            🍔
+                        </div>
+
+                        <strong>
+                            Made Fresh
+                        </strong>
+
+                        <span>
+                            Every single day
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-floating-card">
+
+                        <span>
+                            ⭐
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Delicious
+                            </strong>
+
+                            <small>
+                                Made with love
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CTA
+        ================================================== -->
+
+        <section class="cta-section">
+
+            <div class="cta-content">
+
+                <span>
+                    🍕 🍔 🍰
+                </span>
+
+                <h2>
+                    Hungry Yet?
+                </h2>
+
+                <p>
+                    Your next delicious meal is just a few
+                    clicks away.
+                </p>
+
+                <a
+                    href="#menu"
+                    class="btn cta-btn"
+                >
+                    Order Now
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+
+                    <span class="logo-icon">
+                        🍽️
+                    </span>
+
+                    <span>
+                        Tasty Bites
+                    </span>
+
+                </div>
+
+                <p>
+                    Fresh food. Great taste.
+                    Happy customers.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#menu">
+                    Menu
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Hozayfa Ahsan. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         CART OVERLAY
+    ====================================================== -->
+
+    <div
+        id="cart-overlay"
+        class="cart-overlay"
+    ></div>
+
+
+    <!-- =====================================================
+         CART DRAWER
+    ====================================================== -->
+
+    <aside
+        id="cart-drawer"
+        class="cart-drawer"
+    >
+
+        <div class="cart-header">
+
+            <h3>
+                🛒 Your Cart
+            </h3>
+
+            <button
+                id="close-cart"
+                class="close-btn"
+                type="button"
+            >
+                &times;
+            </button>
+
+        </div>
+
+
+        <div
+            id="cart-items"
+            class="cart-items"
+        >
+
+            <p class="empty-msg">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong>
+                $<span id="cart-total">0.00</span>
+            </strong>
+
+        </div>
+
+
+        <!-- =================================================
+             CHECKOUT
+        ================================================== -->
+
+        <form
+            id="checkout-form"
+            class="checkout-form"
+        >
+
+            <h4>
+                Delivery Details
+            </h4>
+
+            <input
+                type="text"
+                id="cust-name"
+                placeholder="Your name"
+                required
+            >
+
+            <input
+                type="tel"
+                id="cust-phone"
+                placeholder="Phone number"
+                required
+            >
+
+            <textarea
+                id="cust-address"
+                placeholder="Delivery address"
+                required
+            ></textarea>
+
+            <button
+                type="submit"
+                class="btn btn-full"
+            >
+                Place Order
+            </button>
+
+            <p
+                id="order-msg"
+                class="order-msg"
+            ></p>
+
+        </form>
+
+    </aside>
+
+
+    <!-- =====================================================
+         CHATBOT
+    ====================================================== -->
+
+    <button
+        id="chat-toggle"
+        aria-label="Open AI assistant"
+    >
+        💬
     </button>
-  </header>
-
-  <!-- ===== Hero ===== -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Delicious Food, Delivered Fast</h1>
-      <p>Order your favourite meals online and enjoy them at home.</p>
-      <a href="#menu" class="btn">Order Now</a>
-    </div>
-  </section>
-
-  <!-- ===== Menu ===== -->
-  <section id="menu" class="menu-section">
-    <h2>Our Menu</h2>
-    <div id="menu-grid" class="menu-grid">
-      <!-- Menu cards are injected here by app.js -->
-      <p class="loading">Loading menu...</p>
-    </div>
-  </section>
-
-  <!-- ===== About ===== -->
-  <section id="about" class="about-section">
-    <h2>About Us</h2>
-    <p>
-      At Tasty Bites we cook fresh, tasty meals made with quality ingredients.
-      Order online and get hot food delivered right to your door.
-    </p>
-  </section>
-
-  <!-- ===== Footer ===== -->
-  <footer class="footer">
-    <p>© 2026 Hozayfa Ahsan. All rights reserved.</p>
-  </footer>
-
-  <!-- ===== Cart Drawer ===== -->
-  <div id="cart-overlay" class="cart-overlay"></div>
-  <aside id="cart-drawer" class="cart-drawer">
-    <div class="cart-header">
-      <h3>Your Cart</h3>
-      <button id="close-cart" class="close-btn">&times;</button>
-    </div>
-
-    <div id="cart-items" class="cart-items">
-      <p class="empty-msg">Your cart is empty.</p>
-    </div>
-
-    <div class="cart-total">
-      Total: $<span id="cart-total">0.00</span>
-    </div>
-
-    <!-- Checkout form -->
-    <form id="checkout-form" class="checkout-form">
-      <h4>Delivery Details</h4>
-      <input type="text" id="cust-name" placeholder="Your name" required />
-      <input type="tel" id="cust-phone" placeholder="Phone number" required />
-      <textarea id="cust-address" placeholder="Delivery address" required></textarea>
-      <button type="submit" class="btn btn-full">Place Order</button>
-      <p id="order-msg" class="order-msg"></p>
-    </form>
-  </aside>
 
 
-  <button id="chat-toggle">
-    💬
-  </button>
+    <div
+        id="chat-window"
+    >
 
-  <div id="chat-window">
+        <div id="chat-header">
 
-    <div id="chat-header">
+            <div class="chat-header-title">
 
-        🍔 Foodie AI Assistant
+                <span class="chat-avatar">
+                    🤖
+                </span>
 
-    </div>
+                <div>
 
-    <div id="chat-messages">
+                    <strong>
+                        Foodie AI Assistant
+                    </strong>
 
-        <div class="bot">
+                    <small>
+                        ● Online
+                    </small>
 
-            Hello 👋
+                </div>
 
-            How can I help you today?
+            </div>
+
+        </div>
+
+
+        <div id="chat-messages">
+
+            <div class="bot">
+
+                Hello 👋
+
+                <br>
+
+                How can I help you today?
+
+            </div>
+
+        </div>
+
+
+        <div id="chat-input-area">
+
+            <input
+                id="chat-input"
+                type="text"
+                placeholder="Ask about our menu..."
+            >
+
+            <button
+                id="send-btn"
+                type="button"
+            >
+                Send
+            </button>
 
         </div>
 
     </div>
 
-    <div id="chat-input-area">
 
-        <input
-            id="chat-input"
-            type="text"
-            placeholder="Type your question..."
-        >
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
 
-        <button id="send-btn">
+    <link
+        rel="stylesheet"
+        href="/static/chatbot.css"
+    >
 
-            Send
+    <script src="/static/chatbot.js"></script>
 
-        </button>
+    <script src="/static/app.js"></script>
 
-    </div>
-
-  </div>
-
-  <link rel="stylesheet" href="/static/chatbot.css">
-
-  <script src="/static/chatbot.js"></script>
-
-  <script src="/static/app.js"></script>
 </body>
+
 </html>
